@@ -7,7 +7,12 @@
     <title>Inicio</title>
 </head>
 <body>
-    <hi>Hola mundo<br></hi>
+    <!-- <hi>Hola mundo<br></hi> -->
+    {{ titulo }}<br/>
+    {{ request.user }}
+    <hr/>
+    <br/>
+
     <form method="post" action="">{% csrf_token %}
         {{ el_form.as_p }}
         <input type="submit" value="Registrame" />
